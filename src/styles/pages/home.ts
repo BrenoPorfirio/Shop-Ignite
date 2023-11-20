@@ -37,6 +37,10 @@ export const Product = styled('a', {
 
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
 
+    transform: 'translateY(110%)',
+    opacity: 0,
+    transition: 'all 0.2s ease-in-out',
+
     strong: {
       fontsize: '$lg',
     },
@@ -47,4 +51,5 @@ export const Product = styled('a', {
       color: '$green300',
     },
   },
+  '&:hover': {},
 })
