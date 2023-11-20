@@ -8,7 +8,18 @@ export default function Home() {
   return (
     <HomeContainer>
       <Product>
-        <Image src={camiseta1} width={520} height={480} />
+        <Image src={camiseta1} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+      <Product>
+        <Image src={camiseta2} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
       </Product>
     </HomeContainer>
   )
