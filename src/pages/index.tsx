@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { HomeContainer, Product } from '../styles/pages/home'
 import camiseta1 from '../assets/camisetas/1.png'
-import camiseta2 from '../assets/camisetas/2.png'
-import camiseta3 from '../assets/camisetas/3.png'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { stripe } from '../lib/stripe'
@@ -27,34 +25,17 @@ export default function Home({ products }: Homeprops) {
   })
   return (
     <HomeContainer ref={sliderRef} className="keen-slider">
-      <Product className="keen-slider__slide">
-        <Image src={camiseta1} width={520} height={480} alt="" />
-        <footer>
-          <strong>Camiseta X</strong>
-          <span>R$ 79,90</span>
-        </footer>
-      </Product>
-      <Product className="keen-slider__slide">
-        <Image src={camiseta2} width={520} height={480} alt="" />
-        <footer>
-          <strong>Camiseta X</strong>
-          <span>R$ 79,90</span>
-        </footer>
-      </Product>
-      <Product className="keen-slider__slide">
-        <Image src={camiseta3} width={520} height={480} alt="" />
-        <footer>
-          <strong>Camiseta X</strong>
-          <span>R$ 79,90</span>
-        </footer>
-      </Product>
-      <Product className="keen-slider__slide">
-        <Image src={camiseta3} width={520} height={480} alt="" />
-        <footer>
-          <strong>Camiseta X</strong>
-          <span>R$ 79,90</span>
-        </footer>
-      </Product>
+      {products.map((product) => {
+        return (
+          <Product key={product.id} className="keen-slider__slide">
+            <Image src={product.imageUrl} width={520} height={480} alt="" />
+            <footer>
+              <strong>{product.name}</strong>
+              <span>{product.price}</span>
+            </footer>
+          </Product>
+        )
+      })}
     </HomeContainer>
   )
 }
