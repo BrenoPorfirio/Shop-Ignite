@@ -9,7 +9,16 @@ import { stripe } from '../lib/stripe'
 import { GetServerSideProps } from 'next'
 import Stripe from 'stripe'
 
-export default function Home() {
+interface Homeprops {
+  products: {
+    id: string
+    name: string
+    imageUrl: string
+    price: number
+  }[]
+}
+
+export default function Home({ products }: Homeprops) {
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 3,
