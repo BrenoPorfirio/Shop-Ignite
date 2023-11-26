@@ -27,7 +27,7 @@ export default function Home({ products }: Homeprops) {
       {products.map((product) => {
         return (
           <Product
-            href={'/product/${product.id}'}
+            href={`/product/${product.id}`}
             key={product.id}
             className="keen-slider__slide"
           >
