@@ -5,15 +5,14 @@ export default function Success() {
   return (
     <SucessContainer>
       <h1>Compra efetuada!</h1>
-      <ImageContainer>
-        <p>
-          Uhuul <strong>Breno Costa</strong>, sua
-          <strong>Camiseta Beyond The Limits</strong> já está a caminho do seu
-          destino.
-        </p>
+      <ImageContainer></ImageContainer>
+      <p>
+        Uhuul <strong>Breno Costa</strong>, sua
+        <strong>Camiseta Beyond The Limits</strong> já está a caminho do seu
+        destino.
+      </p>
 
-        <Link href="/">Voltar ao catálogo</Link>
-      </ImageContainer>
+      <Link href="/">Voltar ao catálogo</Link>
     </SucessContainer>
   )
 }
