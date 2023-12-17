@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ImageContainer, SucessContainer } from '../styles/pages/sucess'
+import { ImageContainer, SucessContainer } from '../styles/pages/success'
 
 export default function Success() {
   return (
