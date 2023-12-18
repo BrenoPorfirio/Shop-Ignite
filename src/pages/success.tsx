@@ -8,7 +8,7 @@ export default function Success() {
       <ImageContainer></ImageContainer>
       <p>
         Uhuul <strong>Breno Costa</strong>, sua
-        <strong>Camiseta Beyond The Limits</strong> já está a caminho do seu
+        <strong> Camiseta Beyond The Limits</strong> já está a caminho do seu
         destino.
       </p>
 
