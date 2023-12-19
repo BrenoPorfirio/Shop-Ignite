@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Shop-Ignite é um programa que se assemelha a uma carteira digital que permite você registrar entradas e saídas e buscar por transações. 
+O Shop-Ignite é um programa que se assemelha a um shopping virtual e que permite que você faça uma comprar fictícia.
 
 ## :memo: Execução
 
