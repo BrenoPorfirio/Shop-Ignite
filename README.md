@@ -10,6 +10,10 @@ Programa exclusivo promovido pela Rocketseat para ensino de tecnologias WEB.
   <a href="#memo-execução">Execução</a>
 </p>
 
+<p align="center">
+  <img alt="DT-Money" src="https://github.com/BrenoPorfirio/Shop-Ignite/assets/112186428/40c2e28d-f333-4372-a95d-ddac6c3a1f82" width="100%">
+</p>
+
 <br>
 <p align="center">
   
